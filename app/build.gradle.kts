@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -36,7 +38,7 @@ android {
 }
 
 dependencies {
-    // Navigation
+    // Navigation Component
     implementation("androidx.navigation:navigation-fragment-ktx:2.8.0")
     implementation("androidx.navigation:navigation-ui-ktx:2.8.0")
 
