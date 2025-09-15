@@ -8,9 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 class ListFragment : Fragment(), View.OnClickListener {
-    private var param1: String? = null
-    private var param2: String? = null
-
     private lateinit var coffeeListener: CoffeeListener
 
     override fun onAttach(context: Context) {
@@ -40,7 +37,6 @@ class ListFragment : Fragment(), View.OnClickListener {
             view.findViewById(R.id.americano),
             view.findViewById(R.id.latte)
         )
-
         coffeeList.forEach {
             it.setOnClickListener(this)
         }
